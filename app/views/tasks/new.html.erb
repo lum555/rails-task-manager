@@ -1,0 +1,18 @@
+<div class="container">
+<h1>Add a new task</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.hidden_field :completed, :value => false %>
+  <div class="form-group">
+  <%= f.label :title, "Title", class: "control-label" %>
+  <%= f.text_field :title , class: "form-control" %>
+</div>
+  <div class="form-group">
+  <%= f.label :details, "Details", class: "control-label" %>
+  <%= f.text_field :details, class: "form-control" %>
+</div>
+  <%= f.submit "Submit", class: "btn btn-default btn-primary"  %>
+  <%= link_to "Return to index", tasks_path, :class => "btn btn-default btn-info"  %>
+<% end %>
+
+</div>

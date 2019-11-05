@@ -1,0 +1,40 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, html, .body {
+  background: #14281D !important;
+}
+
+.container {
+  background: #F1F5F2;
+  height: 100vh;
+  text-align: center;
+  padding: 8px;
+}
+
+.list-group {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 8px;
+  justify-content: center;
+  margin-bottom: 8px
+}
+
+
+.list-group a {
+  text-decoration: none;
+  color: black;
+}
+
+.card h3{
+  margin-top: 8px;
+}
+.list-group .list-group-item {
+  margin-bottom: 8px;
+}
+
+#add-button {
+  margin-top: 16px
+}
+

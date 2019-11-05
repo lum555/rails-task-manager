@@ -1,0 +1,16 @@
+  <div class="container">
+    <h1>Tasks</h1>
+    <% @tasks.each do |task| %>
+      <div class='card'>
+        <ul class="list-group">
+          <li class="list-group-item"><%= link_to "#{task.title}", "/tasks/#{task.id}" %>
+            <span><%= link_to edit_tasks_path(task) do %>
+              <i class="fas fa-edit"></i>
+              <% end %>
+            </span>
+          </li>
+        </ul>
+    </div>
+    <% end %>
+    <%= link_to "Add a new task", new_task_path, :class => "btn btn-default btn-info", :id => "add-button"   %>
+</div>
